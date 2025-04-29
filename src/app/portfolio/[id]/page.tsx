@@ -3,6 +3,7 @@ import Section from "@/components/shared/Section";
 import { getProjectById } from "@/data/projects";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
 interface ProjectPageProps {
@@ -121,10 +122,11 @@ const ProjectPage = async ({ params }: ProjectPageProps) => {
                         : "aspect-[32/10]"
                     } rounded-2xl overflow-hidden relative`}
                   >
-                    <img
+                    <Image
                       src={image}
                       alt="Brand Image"
                       className="w-full h-full object-cover"
+                      fill
                     />
                   </div>
                 ))}
@@ -140,7 +142,7 @@ const ProjectPage = async ({ params }: ProjectPageProps) => {
         </Section>
       </div>
     );
-  } catch (error) {
+  } catch {
     notFound();
   }
 };

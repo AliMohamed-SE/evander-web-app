@@ -84,8 +84,9 @@ const CustomCurrencyField = <T extends FieldValues>({
                   const selected = currencies.find(
                     (c) => c.code === e.target.value
                   );
-                  if (selected)
-                    setSelectedCurrency && setSelectedCurrency(selected);
+                  if (selected && setSelectedCurrency) {
+                    setSelectedCurrency(selected);
+                  }
                 }}
                 className="py-1 px-3 text-[18px] focus-visible:ring-0 focus-visible:outline-none"
               >

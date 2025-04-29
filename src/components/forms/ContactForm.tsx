@@ -66,7 +66,7 @@ const ContactForm = () => {
 
     if (lastSubmitTime) {
       const timeSinceLastSubmit = Date.now() - parseInt(lastSubmitTime);
-      const cooldownPeriod = 5 * 60 * 1000; // 5 minutes in milliseconds
+      const cooldownPeriod = 2 * 60 * 1000; // 5 minutes in milliseconds
 
       if (timeSinceLastSubmit < cooldownPeriod) {
         setCooldownActive(true);
@@ -233,13 +233,13 @@ const ContactForm = () => {
   };
 
   // Reset submission counts (typically called daily or when needed)
-  const resetSubmissionLimits = () => {
-    localStorage.removeItem("contactFormSubmitCount");
-    localStorage.removeItem("contactFormLastSubmit");
-    setSubmitCount(0);
-    setCooldownActive(false);
-    setCooldownTime(0);
-  };
+  // const resetSubmissionLimits = () => {
+  //   localStorage.removeItem("contactFormSubmitCount");
+  //   localStorage.removeItem("contactFormLastSubmit");
+  //   setSubmitCount(0);
+  //   setCooldownActive(false);
+  //   setCooldownTime(0);
+  // };
 
   return (
     <div>
@@ -394,9 +394,9 @@ const ContactForm = () => {
                 Thank you for reaching out!
               </DialogTitle>
               <p className="mb-6 text-gray-600 text-lg md:text-xl w-[85%] md:w-[70%]">
-                We've received your message and will get back to you as soon as
-                possible. In the meantime, feel free to explore our latest
-                projects or connect with us on social media.
+                We&apos;ve received your message and will get back to you as
+                soon as possible. In the meantime, feel free to explore our
+                latest projects or connect with us on social media.
               </p>
               <EvanderButton
                 label="Explore Our Work"
