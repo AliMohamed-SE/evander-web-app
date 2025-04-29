@@ -18,9 +18,9 @@ const ContactPage = () => {
             Have a project in mind? Reach out, and let’s turn your ideas into
             reality.
           </p>
-          <div className="relative w-full h-[165px] rounded-xl overflow-hidden lg:hidden">
+          <div className="relative w-full aspect-[10/9] rounded-xl overflow-hidden lg:hidden">
             <Image
-              src={"/images/services/services-2.png"}
+              src={"/images/contact-banner.png"}
               alt="Contact Image"
               fill
             />
