@@ -8,7 +8,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import navItems from "./navItems";
+import navItems, { NavItemInterface } from "./navItems";
 import NavLink from "./NavLink";
 import Image from "next/image";
 import EvanderButton from "@/components/shared/EvanderButton";
@@ -27,7 +27,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      const direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
         setVisible(true);
@@ -69,7 +69,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
           />
         </Link>
         <div className="flex border border-white rounded-full bg-none p-1 items-center justify-center gap-3 backdrop-blur-lg">
-          {firstHalf.map((navItem: any, idx: number) => (
+          {firstHalf.map((navItem: NavItemInterface, idx: number) => (
             <NavLink key={idx} link={navItem.link} name={navItem.name} />
           ))}
           <Link href="/" className="md:hidden">
@@ -82,7 +82,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
               />
             </div>
           </Link>
-          {secondHalf.map((navItem: any, idx: number) => (
+          {secondHalf.map((navItem: NavItemInterface, idx: number) => (
             <NavLink key={idx} link={navItem.link} name={navItem.name} />
           ))}
         </div>

@@ -1,18 +1,13 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowUpRight, SquarePen } from "lucide-react";
 import { Project } from "@/data/projects";
-import EvanderButton from "../shared/EvanderButton";
 import Image from "next/image";
-import clsx from "clsx";
 import Link from "next/link";
 
 const ProjectCard = ({
-  index,
   project,
   type,
 }: {
-  index: number;
   project: Project;
   type?: string;
 }) => {

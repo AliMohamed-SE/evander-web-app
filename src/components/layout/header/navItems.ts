@@ -1,4 +1,9 @@
-const navItems = [
+export interface NavItemInterface {
+  name: string;
+  link: string;
+}
+
+const navItems: NavItemInterface[] = [
   {
     name: "Home",
     link: "/",

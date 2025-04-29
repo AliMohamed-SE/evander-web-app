@@ -84,7 +84,7 @@ export async function POST(request: NextRequest) {
               Service Needed: ${validatedData.service}<br>
               Budget: ${
                 validatedData.budget
-                  ? `$${validatedData.budget}`
+                  ? `${validatedData.budget}`
                   : "Not specified"
               }<br>
               ${
@@ -142,12 +142,17 @@ export async function POST(request: NextRequest) {
       { success: true, message: "Email sent successfully" },
       { status: 200 }
     );
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Contact form submission error:", error);
+
+    let errorMessage = "Unknown error";
+    if (error instanceof Error) {
+      errorMessage = error.message;
+    }
 
     // Return error response
     return NextResponse.json(
-      { success: false, message: "Failed to send email", error: error.message },
+      { success: false, message: "Failed to send email", error: errorMessage },
       { status: 500 }
     );
   }

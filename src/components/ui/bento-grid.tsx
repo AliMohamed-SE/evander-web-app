@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import EvanderButton from "../shared/EvanderButton";
 import { ArrowRight } from "lucide-react";
-import { WorldMap } from "./world-map";
 
 export const BentoGrid = ({
   className,

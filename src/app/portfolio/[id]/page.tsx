@@ -1,7 +1,7 @@
 import EvanderButton from "@/components/shared/EvanderButton";
 import Section from "@/components/shared/Section";
 import { getProjectById } from "@/data/projects";
-import { ArrowRight, ArrowRightLeft, ArrowUpRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 

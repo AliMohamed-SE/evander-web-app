@@ -1,8 +1,6 @@
 import { HoverBorderGradient } from "@/components/buttons/HoverBorderGradient";
-import EvanderButton from "@/components/shared/EvanderButton";
 import Section from "@/components/shared/Section";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 import React from "react";
 
 const HeroSection = () => {

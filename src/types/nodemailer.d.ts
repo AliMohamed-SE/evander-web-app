@@ -1,4 +1,4 @@
-// Create this file at src/types/nodemailer.d.ts (or any location within your src directory)
+// src/types/nodemailer.d.ts
 
 declare module "nodemailer" {
   export interface SendMailOptions {
@@ -10,45 +10,50 @@ declare module "nodemailer" {
     text?: string;
     html?: string;
     attachments?: Attachment[];
-    [key: string]: any;
-  }
-
-  export interface Attachment {
-    filename?: string;
-    content?: any;
-    path?: string;
-    contentType?: string;
+    headers?: Record<string, string | number | boolean>;
     cid?: string;
+    date?: Date | string;
     encoding?: string;
-    headers?: any;
-    raw?: string;
+    priority?: "high" | "normal" | "low";
+    replyTo?: string;
+    inReplyTo?: string;
+    references?: string | string[];
+    envelope?: {
+      from?: string;
+      to?: string[];
+    };
+    messageId?: string;
+    dsn?: {
+      id?: string;
+      return?: "headers" | "full";
+      notify?: "success" | "failure" | "delay" | "never";
+      recipient?: string;
+    };
+    [key: string]: unknown; // For rarely used extra options
   }
 
   export interface Transporter {
-    sendMail(options: SendMailOptions): Promise<any>;
+    sendMail(options: SendMailOptions): Promise<{
+      accepted: string[];
+      rejected: string[];
+      envelopeTime: number;
+      messageTime: number;
+      messageSize: number;
+      response: string;
+      envelope: { from: string; to: string[] };
+      messageId: string;
+    }>;
     verify(): Promise<boolean>;
     close(): void;
   }
 
   export interface TransportOptions {
-    host?: string;
-    port?: number;
-    secure?: boolean;
-    auth?: {
-      user?: string;
-      pass?: string;
-      type?: string;
-      clientId?: string;
-      clientSecret?: string;
-      refreshToken?: string;
-      accessToken?: string;
-      expires?: number;
+    service: "gmail";
+    auth: {
+      user: string | undefined;
+      pass: string | undefined;
     };
-    logger?: boolean;
-    debug?: boolean;
-    [key: string]: any;
   }
 
   export function createTransport(options: TransportOptions): Transporter;
-  export function createTransport(transport: any, defaults?: any): Transporter;
 }

@@ -20,7 +20,7 @@ const AboutPage = () => {
             Evander Creative Studio was founded with a simple yet powerful
             vision—to bridge the gap between aesthetic excellence and functional
             design. We believe that a strong brand is more than just a logo or a
-            website; it's a strategic combination of visual identity, user
+            website; it&apos;s a strategic combination of visual identity, user
             experience, and storytelling.
             <br />
             <br />

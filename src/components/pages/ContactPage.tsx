@@ -12,7 +12,7 @@ const ContactPage = () => {
             Contact Us
           </h1>
           <h2 className="font-semibold text-2xl lg:text-[40px] xl:text-[48px]">
-            Let's Connect & Create!
+            Let&apos;s Connect & Create!
           </h2>
           <p className="text-xs lg:text-[16px] xl:text-[20px] w-[80%] leading-relaxed">
             Have a project in mind? Reach out, and let’s turn your ideas into

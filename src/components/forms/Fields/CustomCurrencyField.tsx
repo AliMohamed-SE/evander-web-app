@@ -10,14 +10,7 @@ import {
 import { Input } from "../../ui/input";
 import { CustomFormFieldProps } from "@/lib/schemas";
 import { FieldValues } from "react-hook-form";
-
-const currencies = [
-  { code: "USD", symbol: "$" },
-  { code: "EUR", symbol: "€" },
-  { code: "GBP", symbol: "£" },
-  { code: "JPY", symbol: "¥" },
-  { code: "CAD", symbol: "CA$" },
-];
+import { currencies } from "../ContactForm";
 
 const CustomCurrencyField = <T extends FieldValues>({
   form,
@@ -26,8 +19,9 @@ const CustomCurrencyField = <T extends FieldValues>({
   placeholder,
   icon,
   required,
+  selectedCurrency,
+  setSelectedCurrency,
 }: CustomFormFieldProps<T>) => {
-  const [selectedCurrency, setSelectedCurrency] = useState(currencies[0]);
   const [formattedValue, setFormattedValue] = useState("");
 
   // Format number with commas
@@ -69,7 +63,7 @@ const CustomCurrencyField = <T extends FieldValues>({
               <div className="flex items-center w-full">
                 <div className="flex-grow relative">
                   <div className="absolute left-0 top-1/2 transform -translate-y-[11px]">
-                    {selectedCurrency.symbol}
+                    {selectedCurrency?.symbol}
                   </div>
                   <Input
                     placeholder={placeholder}
@@ -77,7 +71,7 @@ const CustomCurrencyField = <T extends FieldValues>({
                     onChange={(e) => {
                       const value = e.target.value;
                       const rawValue = value.replace(/[^\d.]/g, "");
-                      field.onChange(`${selectedCurrency.symbol}${rawValue}`);
+                      field.onChange(`${rawValue}`);
                       setFormattedValue(formatNumber(value));
                     }}
                     className="border-none focus-visible:ring-0 focus-visible:outline-none w-full pl-10"
@@ -85,12 +79,13 @@ const CustomCurrencyField = <T extends FieldValues>({
                 </div>
               </div>
               <select
-                value={selectedCurrency.code}
+                value={selectedCurrency?.code}
                 onChange={(e) => {
                   const selected = currencies.find(
                     (c) => c.code === e.target.value
                   );
-                  if (selected) setSelectedCurrency(selected);
+                  if (selected)
+                    setSelectedCurrency && setSelectedCurrency(selected);
                 }}
                 className="py-1 px-3 text-[18px] focus-visible:ring-0 focus-visible:outline-none"
               >

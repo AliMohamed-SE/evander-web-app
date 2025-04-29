@@ -63,12 +63,7 @@ const PortfolioPage = () => {
           <TabsContent key={label} value={label}>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:lg:grid-cols-4 gap-10 p-4">
               {filteredProjects.map((project, index) => (
-                <ProjectCard
-                  key={index}
-                  index={index}
-                  project={project}
-                  type="primary"
-                />
+                <ProjectCard key={index} project={project} type="primary" />
               ))}
             </div>
           </TabsContent>

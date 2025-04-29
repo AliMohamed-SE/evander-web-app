@@ -1,6 +1,5 @@
-import { Country } from "@/data/countries";
 import { ReactNode } from "react";
-import { Control, FieldValues, Path, UseFormReturn } from "react-hook-form";
+import { FieldValues, Path, UseFormReturn } from "react-hook-form";
 
 export interface ButtonProps {
   label?: string;
@@ -44,4 +43,6 @@ export interface CustomFormFieldProps<T extends FieldValues> {
   placeholder?: string;
   icon?: React.ReactNode;
   required?: boolean;
+  selectedCurrency?: { code: string; symbol: string };
+  setSelectedCurrency?: (currency: { code: string; symbol: string }) => void;
 }

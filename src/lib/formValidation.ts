@@ -22,7 +22,7 @@ export const contactSchema = z.object({
 
   budget: z.string(),
 
-  service: z.enum(["Software Dev", "Graphic Design", "Both"], {
+  service: z.enum(["Software Solution", "Graphic Design", "Full Package"], {
     message: "Please select a valid service.",
   }),
 

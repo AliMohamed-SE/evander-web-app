@@ -1,14 +1,13 @@
 "use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Value } from "@/data/values";
-import { ArrowRight, ArrowUpRight, SquarePen } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import EvanderButton from "../shared/EvanderButton";
 import Image from "next/image";
 
 const ValueCard = ({
   index,
   item,
-  className,
 }: {
   index: number;
   item: Value;
