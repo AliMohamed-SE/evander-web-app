@@ -2,35 +2,32 @@ import EvanderButton from "@/components/shared/EvanderButton";
 import Section from "@/components/shared/Section";
 import { getProjectById } from "@/data/projects";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
-import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-interface ProjectPageProps {
-  params: { id: string };
-}
+type ProjectPageProps = Promise<{ id: string }>;
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { id: string };
-}): Promise<Metadata> {
-  const { id } = await params;
-  const project = await getProjectById(Number(id));
+// export async function generateMetadata({
+//   params,
+// }: {
+//   params: { id: string };
+// }): Promise<Metadata> {
+//   const { id } = await params;
+//   const project = await getProjectById(Number(id));
 
-  if (!project) {
-    return {
-      title: "Project Not Found",
-    };
-  }
+//   if (!project) {
+//     return {
+//       title: "Project Not Found",
+//     };
+//   }
 
-  return {
-    title: project.name,
-    description: project.description,
-  };
-}
+//   return {
+//     title: project.name,
+//     description: project.description,
+//   };
+// }
 
-const ProjectPage = async ({ params }: ProjectPageProps) => {
+const ProjectPage = async ({ params }: { params: ProjectPageProps }) => {
   const { id } = await params;
 
   try {
