@@ -33,7 +33,7 @@ const values: Value[] = [
     title: "Reliability",
     description:
       "We are committed to delivering on time without compromising on quality. Our clear communication, structured processes, and attention to detail guarantee a hassle-free collaboration and a polished final product.",
-    icon: "/images/values/reliability.svg",
+    icon: "/images/values/reliability.png",
   },
   {
     title: "Growth-Focused",

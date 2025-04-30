@@ -10,8 +10,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faInstagram,
-  faTiktok,
   faDribbble,
+  faBehance,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
@@ -67,31 +67,37 @@ const Footer = () => {
             ))}
           </div>
           <div className="gap-3 hidden md:flex">
-            <Link href="tiktok.com" target="_blank">
-              <FontAwesomeIcon icon={faTiktok} />
+            <Link href="https://www.behance.net/EvanderCS" target="_blank">
+              <FontAwesomeIcon icon={faBehance} />
             </Link>
-            <Link href="instagram.com" target="_blank">
+            <Link href="https://www.instagram.com/evander_cs/" target="_blank">
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
-            <Link href="github.com" target="_blank">
+            <Link
+              href="https://github.com/evander-creative-studio"
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faGithub} />
             </Link>
-            <Link href="dribble.com" target="_blank">
+            <Link href="https://dribbble.com/EvanderCs" target="_blank">
               <FontAwesomeIcon icon={faDribbble} />
             </Link>
           </div>
         </div>
         <div className="space-x-3 ml-auto w-fit md:hidden">
-          <Link href="tiktok.com" target="_blank">
-            <FontAwesomeIcon icon={faTiktok} />
+          <Link href="https://www.behance.net/EvanderCS" target="_blank">
+            <FontAwesomeIcon icon={faBehance} />
           </Link>
-          <Link href="instagram.com" target="_blank">
+          <Link href="https://www.instagram.com/evander_cs/" target="_blank">
             <FontAwesomeIcon icon={faInstagram} />
           </Link>
-          <Link href="github.com" target="_blank">
+          <Link
+            href="https://github.com/evander-creative-studio"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </Link>
-          <Link href="dribble.com" target="_blank">
+          <Link href="https://dribbble.com/EvanderCs" target="_blank">
             <FontAwesomeIcon icon={faDribbble} />
           </Link>
         </div>
@@ -100,8 +106,12 @@ const Footer = () => {
             &copy; 2025 Evander Creative Studio.
           </p>
           <div className="text-xs md:text-[16px] gap-2 flex">
-            <Link href="/privacy-policy">Privay Policy</Link>
-            <Link href="/privacy-policy">Terms of Service</Link>
+            <Link href="/legal/privacy-policy" className="hover:underline">
+              Privacy Policy
+            </Link>
+            <Link href="/legal/terms-of-service" className="hover:underline">
+              Terms of Service
+            </Link>
           </div>
         </div>
       </footer>
