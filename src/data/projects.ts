@@ -153,7 +153,7 @@ const projects: Project[] = [
     description:
       "Collin Candy is a vibrant and joyful candy and ice cream shop that brings a splash of color and a sense of fun to every visit. The brand is all about creating delightful experiences, with a playful and friendly atmosphere that appeals to both children and adults. At the heart of Collin Candy is our charming cartoon mascot, Colin, who embodies the spirit of joy and excitement that we aim to deliver. From the eye-catching packaging to our whimsical in-store displays, every aspect of Collin Candy is designed to make you smile. With a wide variety of delectable candies and creamy ice creams, we offer a sweet escape that is as memorable as it is delicious.",
     date: "August 2024",
-    thumbnail: "/images/projects/collin-candy/collin-candy_3-1.jpeg",
+    thumbnail: "/images/projects/collin-candy/collin-candy_thumbnail.png",
     audience:
       "Children aged 5-12 and their parents, Teenagers and young adults who enjoy candy and ice cream.",
     sections: [
@@ -180,6 +180,47 @@ const projects: Project[] = [
           "/images/projects/collin-candy/collin-candy_3-2.jpeg",
           "/images/projects/collin-candy/collin-candy_3-3.jpeg",
           "/images/projects/collin-candy/collin-candy_3-4.jpeg",
+        ],
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Trip Global",
+    services: ["Logo/Brand Identity", "UI/UX Design"],
+    description:
+      "Trip Global is a premier provider of high-quality fly fishing equipment, dedicated to serving passionate anglers across the globe. Built on a foundation of excellence, innovation, and sustainability, Trip Global is more than a gear brand—it’s a gateway to unforgettable fishing experiences. Our mission is to elevate the standards of performance and reliability in the fly fishing industry while remaining deeply connected to nature and our community of outdoor enthusiasts.",
+    date: "November 2022",
+    thumbnail: "/images/projects/trip-global/trip-global_thumbnail.png",
+    audience:
+      "Children aged 5-12 and their parents, Teenagers and young adults who enjoy candy and ice cream.",
+    sections: [
+      {
+        images: [
+          "/images/projects/trip-global/trip-global_1-1.png",
+          "/images/projects/trip-global/trip-global_1-2.png",
+          "/images/projects/trip-global/trip-global_1-3.png",
+          "/images/projects/trip-global/trip-global_1-4.png",
+        ],
+        subTitle: "Design Concept",
+        title:
+          "Trip Global is a premier provider of high-quality fly fishing equipment, dedicated to serving passionate anglers across the globe. Built on a foundation of excellence, innovation, and sustainability, Trip Global is more than a gear brand—it’s a gateway to unforgettable fishing experiences. Our mission is to elevate the standards of performance and reliability in the fly fishing industry while remaining deeply connected to nature and our community of outdoor enthusiasts.",
+      },
+      {
+        images: [
+          "/images/projects/trip-global/trip-global_2-1.png",
+          "/images/projects/trip-global/trip-global_2-2.png",
+        ],
+        subTitle: "Type & Color",
+        title:
+          "The visual identity of Trip Global is deeply rooted in the natural world. The typeface is clean, confident, and contemporary, chosen to reflect clarity, trust, and refined craftsmanship. The color palette enhances the brand’s storytelling, drawing directly from landscapes and experiences tied to the outdoors: Jordan Blue evokes openness and freedom, capturing the wide skies and vast waters fly fishers embrace. Navy Blue brings depth and authority, grounding the brand in strength, professionalism, and trust. Glade Green adds vibrancy and life, symbolizing growth, vitality, and harmony with nature. Mineral Green furthers this connection to the earth, promoting renewal and a deep sense of natural immersion. Together, these elements create a cohesive visual language that embodies the essence of Trip Global—elevated, adventurous, and authentically connected to the world of fly fishing.",
+      },
+      {
+        images: [
+          "/images/projects/trip-global/trip-global_3-1.png",
+          "/images/projects/trip-global/trip-global_3-2.png",
+          "/images/projects/trip-global/trip-global_3-3.png",
+          "/images/projects/trip-global/trip-global_3-4.png",
         ],
       },
     ],
