@@ -152,7 +152,7 @@ const projects: Project[] = [
     services: ["Logo/Brand Identity", "UI/UX Design"],
     description:
       "Collin Candy is a vibrant and joyful candy and ice cream shop that brings a splash of color and a sense of fun to every visit. The brand is all about creating delightful experiences, with a playful and friendly atmosphere that appeals to both children and adults. At the heart of Collin Candy is our charming cartoon mascot, Colin, who embodies the spirit of joy and excitement that we aim to deliver. From the eye-catching packaging to our whimsical in-store displays, every aspect of Collin Candy is designed to make you smile. With a wide variety of delectable candies and creamy ice creams, we offer a sweet escape that is as memorable as it is delicious.",
-    date: "August 2024",
+    date: "August 2023",
     thumbnail: "/images/projects/collin-candy/collin-candy_thumbnail.png",
     audience:
       "Children aged 5-12 and their parents, Teenagers and young adults who enjoy candy and ice cream.",
@@ -189,11 +189,11 @@ const projects: Project[] = [
     name: "Trip Global",
     services: ["Logo/Brand Identity", "UI/UX Design"],
     description:
-      "Trip Global is a premier provider of high-quality fly fishing equipment, dedicated to serving passionate anglers across the globe. Built on a foundation of excellence, innovation, and sustainability, Trip Global is more than a gear brand—it’s a gateway to unforgettable fishing experiences. Our mission is to elevate the standards of performance and reliability in the fly fishing industry while remaining deeply connected to nature and our community of outdoor enthusiasts.",
-    date: "November 2022",
+      "Trip Global is a specialized brand offering high-quality fly fishing gear and outdoor apparel crafted for dedicated anglers and nature lovers. The project aimed to develop a brand identity that reflects the ruggedness and authenticity of the outdoors while appealing to an adventurous, discerning audience. The identity needed to communicate trust, durability, and a deep connection with nature.",
+    date: "November 2023",
     thumbnail: "/images/projects/trip-global/trip-global_thumbnail.png",
     audience:
-      "Children aged 5-12 and their parents, Teenagers and young adults who enjoy candy and ice cream.",
+      "Primarily adults aged 25 to 55 — mature enough to have disposable income for quality gear but still active and adventurous. Mostly male, as fly fishing traditionally attracts more men, but inclusive of female anglers and outdoor enthusiasts as well.",
     sections: [
       {
         images: [
@@ -204,7 +204,7 @@ const projects: Project[] = [
         ],
         subTitle: "Design Concept",
         title:
-          "Trip Global is a premier provider of high-quality fly fishing equipment, dedicated to serving passionate anglers across the globe. Built on a foundation of excellence, innovation, and sustainability, Trip Global is more than a gear brand—it’s a gateway to unforgettable fishing experiences. Our mission is to elevate the standards of performance and reliability in the fly fishing industry while remaining deeply connected to nature and our community of outdoor enthusiasts.",
+          "The design concept captures the harmony between the calmness of nature and the thrill of the fishing experience. It draws inspiration from organic shapes and natural textures, creating a visual narrative that is both grounded and dynamic. The branding balances a handcrafted feel with modern simplicity, emphasizing precision and expertise without sacrificing approachability.",
       },
       {
         images: [
@@ -213,7 +213,7 @@ const projects: Project[] = [
         ],
         subTitle: "Type & Color",
         title:
-          "The visual identity of Trip Global is deeply rooted in the natural world. The typeface is clean, confident, and contemporary, chosen to reflect clarity, trust, and refined craftsmanship. The color palette enhances the brand’s storytelling, drawing directly from landscapes and experiences tied to the outdoors: Jordan Blue evokes openness and freedom, capturing the wide skies and vast waters fly fishers embrace. Navy Blue brings depth and authority, grounding the brand in strength, professionalism, and trust. Glade Green adds vibrancy and life, symbolizing growth, vitality, and harmony with nature. Mineral Green furthers this connection to the earth, promoting renewal and a deep sense of natural immersion. Together, these elements create a cohesive visual language that embodies the essence of Trip Global—elevated, adventurous, and authentically connected to the world of fly fishing.",
+          "The typography and color choices work together to evoke a sense of reliability and warmth while maintaining a clean, contemporary look. The typography combines strength with readability, ensuring the brand feels both professional and accessible. The color palette is inspired by natural environments, using muted, earthy tones that convey stability, warmth, and balance—creating an inviting yet sophisticated atmosphere.",
       },
       {
         images: [
@@ -222,6 +222,9 @@ const projects: Project[] = [
           "/images/projects/trip-global/trip-global_3-3.png",
           "/images/projects/trip-global/trip-global_3-4.png",
         ],
+        subTitle: "Finalization",
+        title:
+          "The final brand identity includes a versatile logo adaptable across various applications, a harmonious color system that ensures consistency, and carefully crafted patterns and visual elements that reinforce the brand’s connection to nature and craftsmanship. Mockups demonstrate the identity applied to products, packaging, and digital platforms, showcasing the brand’s readiness to engage its audience authentically and effectively.",
       },
     ],
   },

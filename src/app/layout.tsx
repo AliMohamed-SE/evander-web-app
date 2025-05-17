@@ -34,32 +34,26 @@ export const metadata: Metadata = {
     "Web Development",
     "Evander Creative Studio",
   ],
-  authors: [{ name: "Evander Creative Studio", url: "https://yourdomain.com" }],
-  metadataBase: new URL("https://yourdomain.com"),
+  authors: [
+    { name: "Evander Creative Studio", url: "https://evandercs.vercel.app/" },
+  ],
+  metadataBase: new URL("https://evandercs.vercel.app/"),
   openGraph: {
     title: "Evander Creative Studio | Branding & Software Solutions",
     description:
       "Evander Creative Studio crafts impactful brand identities & software solutions. From UI/UX to development, we merge creativity with strategy to help businesses stand out.",
-    url: "https://yourdomain.com",
+    url: "https://evandercs.vercel.app/",
     siteName: "Evander Creative Studio",
     images: [
       {
-        url: "/og-image.jpg", // Update with actual OpenGraph image
-        width: 1200,
-        height: 630,
-        alt: "Evander Creative Studio Banner",
+        url: "/images/seo-banner.png",
+        width: 800,
+        height: 800,
+        alt: "Evander Creative Studio",
       },
     ],
     locale: "en_US",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Evander Creative Studio | Branding & Software Solutions",
-    description:
-      "Evander Creative Studio crafts impactful brand identities & software solutions. From UI/UX to development, we merge creativity with strategy to help businesses stand out.",
-    images: ["/twitter-image.jpg"], // Update with actual Twitter image
-    creator: "@EvanderStudio", // Update with your Twitter handle
   },
   icons: {
     icon: "/favicon.ico",
