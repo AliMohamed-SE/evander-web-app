@@ -28,7 +28,7 @@ export async function generateMetadata({
     openGraph: {
       title: `Evander Creative Studio | ${project.name}`,
       description: project.description,
-      url: `https://evandercs.vercel.app/${id}`,
+      url: `https://evandercs.vercel.app/portfolio/${id}`,
       images: [
         {
           url: project.thumbnail,
