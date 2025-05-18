@@ -23,15 +23,15 @@ export async function generateMetadata({
   }
 
   return {
-    title: `Evander Creative Studio | ${project.name}`,
+    title: project.name,
     description: project.description,
     openGraph: {
-      title: `Evander Creative Studio | ${project.name}`,
+      title: project.name,
       description: project.description,
       url: `https://evandercs.vercel.app/portfolio/${id}`,
       images: [
         {
-          url: `https://evandercs.vercel.app/public/${project.thumbnail}`,
+          url: `https://evandercs.vercel.app/${project.thumbnail}`,
           width: 1200,
           height: 630,
           alt: "Evander Creative Studio Project Thumbnail",
