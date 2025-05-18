@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     siteName: "Evander Creative Studio",
     images: [
       {
-        url: "/images/seo-banner.png",
-        width: 800,
-        height: 800,
+        url: "https://evandercs.vercel.app/public/images/seo-banner.png",
+        width: 1200,
+        height: 630,
         alt: "Evander Creative Studio",
       },
     ],

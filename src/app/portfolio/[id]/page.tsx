@@ -11,7 +11,7 @@ type ProjectPageProps = Promise<{ id: string }>;
 export async function generateMetadata({
   params,
 }: {
-  params: { id: string };
+  params: ProjectPageProps;
 }): Promise<Metadata> {
   const { id } = await params;
   const project = await getProjectById(Number(id));
@@ -31,9 +31,9 @@ export async function generateMetadata({
       url: `https://evandercs.vercel.app/portfolio/${id}`,
       images: [
         {
-          url: project.thumbnail,
-          width: 300,
-          height: 400,
+          url: `https://evandercs.vercel.app/public/${project.thumbnail}`,
+          width: 1200,
+          height: 630,
           alt: "Evander Creative Studio Project Thumbnail",
         },
       ],
