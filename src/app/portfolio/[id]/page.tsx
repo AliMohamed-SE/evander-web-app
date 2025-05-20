@@ -31,7 +31,7 @@ export async function generateMetadata({
       url: `https://evandercs.vercel.app/portfolio/${id}`,
       images: [
         {
-          url: `https://evandercs.vercel.app/${project.thumbnail}`,
+          url: `https://evandercs.vercel.app/${project.op}`,
           width: 1200,
           height: 628,
           alt: "Evander Creative Studio Project Thumbnail",
