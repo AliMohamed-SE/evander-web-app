@@ -10,6 +10,7 @@ export interface Project {
   date: string;
   thumbnail: string;
   download?: string;
+  op: string;
   audience?: string;
   site?: string;
   sections: Section[];
@@ -35,6 +36,7 @@ const projects: Project[] = [
     date: "November 2024",
     thumbnail: "/images/projects/efg-stock/efg_thumbnail.png",
     download: "/images/projects/efg-stock/efg_case-study.pdf",
+    op: "/images/projects/efg-stock/op-kidzania.png",
     site: "https://efgstockmarket.replit.app/login",
     audience: "Children aged 5-12.",
     sections: [
@@ -173,6 +175,7 @@ const projects: Project[] = [
       "Mirage was born from the desire to redefine modern masculinity through the art of fragrance. Conceived as a luxury perfume line tailored exclusively for men, the brand set out to capture the essence of strength, elegance, and quiet confidence. The name 'Mirage' evokes a sense of mystery and allure—something just out of reach, yet unforgettable. From its inception, the brand sought to stand apart by combining timeless craftsmanship with a contemporary edge. Drawing inspiration from the world of high fashion, fine materials, and refined taste, Mirage is more than just a scent—it's an experience.",
     date: "February 2024",
     thumbnail: "/images/projects/mirage/mirage_thumbnail.png",
+    op: "/images/projects/mirage/op-mirage.png",
     site: "https://main.dfcx022kewd99.amplifyapp.com/",
     audience:
       "It’s designed for the modern man who appreciates depth, detail, and presence, making every moment feel like a lasting impression.",
@@ -218,6 +221,7 @@ const projects: Project[] = [
       "Kairos emerged from the vision of creating software solutions that not only function efficiently but also resonate with purpose and precision. Founded by a team of passionate developers, the brand was born out of a desire to bring meaningful change through technology—prioritizing strategic timing, thoughtful development, and growth-focused innovation. The name 'Kairos' itself, derived from the Greek word meaning 'the right or opportune moment,' encapsulates the essence of the brand: delivering solutions that are not just functional, but timely, impactful, and aligned with the unique needs of each client. From early brainstorming sessions to the first line of code, Kairos has been committed to blending creative vision with technical excellence.",
     date: "March 2025",
     thumbnail: "/images/projects/kairos/kairos_thumbnail.png",
+    op: "/images/projects/kairos/op-kairos.png",
     audience:
       "Visionary businesses and organizations seeking purpose-driven, timely, and innovative software solutions tailored to their strategic goals.",
     sections: [
@@ -260,6 +264,7 @@ const projects: Project[] = [
       "The Dyar Hajer website is a modern, visually compelling web application designed to showcase the architecture and interior design services of Dyar Hajer, a creative studio based in the Middle East. The website serves as a digital portfolio and business hub, reflecting the studio's elegant aesthetic, culturally inspired designs, and attention to detail. It highlights completed projects, design philosophies, service offerings, and client testimonials. The platform is built for seamless performance across devices, emphasizing high-resolution visuals, minimalistic navigation, and a luxurious user experience.",
     date: "September 2024",
     thumbnail: "/images/projects/dyar-hajer/dyar-hajer_thumbnail.png",
+    op: "/images/projects/dyar-hajer/op-dyar.png",
     site: "https://dyarhajer.com/",
     audience:
       "individuals and families looking to build, renovate, or decorate homes and private residences",
@@ -277,6 +282,7 @@ const projects: Project[] = [
       "Collin Candy is a vibrant and joyful candy and ice cream shop that brings a splash of color and a sense of fun to every visit. The brand is all about creating delightful experiences, with a playful and friendly atmosphere that appeals to both children and adults. At the heart of Collin Candy is our charming cartoon mascot, Colin, who embodies the spirit of joy and excitement that we aim to deliver. From the eye-catching packaging to our whimsical in-store displays, every aspect of Collin Candy is designed to make you smile. With a wide variety of delectable candies and creamy ice creams, we offer a sweet escape that is as memorable as it is delicious.",
     date: "August 2023",
     thumbnail: "/images/projects/collin-candy/collin-candy_thumbnail.png",
+    op: "/images/projects/collin-candy/op-collin.png",
     audience:
       "Children aged 5-12 and their parents, Teenagers and young adults who enjoy candy and ice cream.",
     sections: [
@@ -315,6 +321,7 @@ const projects: Project[] = [
       "Trip Global is a specialized brand offering high-quality fly fishing gear and outdoor apparel crafted for dedicated anglers and nature lovers. The project aimed to develop a brand identity that reflects the ruggedness and authenticity of the outdoors while appealing to an adventurous, discerning audience. The identity needed to communicate trust, durability, and a deep connection with nature.",
     date: "November 2023",
     thumbnail: "/images/projects/trip-global/trip-global_thumbnail.png",
+    op: "/images/projects/trip-global/op-trip.png",
     audience:
       "Primarily adults aged 25 to 55 — mature enough to have disposable income for quality gear but still active and adventurous. Mostly male, as fly fishing traditionally attracts more men, but inclusive of female anglers and outdoor enthusiasts as well.",
     sections: [
