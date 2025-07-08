@@ -113,6 +113,7 @@ const projects: Project[] = [
     date: "March 2025",
     thumbnail: "/images/projects/lifecare-egypt/lifecare-egypt_thumbnail.png",
     // download: "/images/projects/lifecare-egypt/lifecare_case-study.pdf",
+    op: "/images/projects/efg-stock/op-lifecare.png",
     site: "https://lifecaregypt.link",
     audience: "Beauty Cosmetics Distributors",
     sections: [
