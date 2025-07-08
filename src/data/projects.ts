@@ -1,14 +1,15 @@
-export const getProjectById = async (id: number) => {
+export const getProjectById = async (id: string) => {
   return (await projects.find((project) => project.id === id)) || null;
 };
 
 export interface Project {
-  id: number;
+  id: string;
   name: string;
   services: string[];
   description: string;
   date: string;
   thumbnail: string;
+  download?: string;
   audience?: string;
   site?: string;
   sections: Section[];
@@ -18,27 +19,149 @@ export interface Section {
   images?: string[];
   subTitle?: string;
   title?: string;
+  highlights?: {
+    title: string;
+    items: string[];
+  }[];
 }
 
 const projects: Project[] = [
   {
-    id: 1,
+    id: "efg-stock-market",
     name: "EFG Hermes Stock Exchange",
     services: ["Web Development", "API Development", "Maintenance & Support"],
     description:
       "The Stock Exchange App. is an interactive and educational stock market simulation application developed specifically for children visiting KidZania. The primary objective of the app is to introduce kids, to the basics of investing, trading, and financial literacy through gamified learning in a safe and engaging environment. The app allows young users to explore how the stock market works by simulating real-world concepts like buying and selling stocks, monitoring market trends, understanding supply and demand, and tracking performance over time. The application uses KidZania-branded companies to create a fun and relatable market environment.",
     date: "November 2024",
     thumbnail: "/images/projects/efg-stock/efg_thumbnail.png",
+    download: "/images/projects/efg-stock/efg_case-study.pdf",
     site: "https://efgstockmarket.replit.app/login",
     audience: "Children aged 5-12.",
     sections: [
       {
+        highlights: [
+          {
+            title: "🛠️ Tech Stack",
+            items: [
+              "React.js + Vite for fast, responsive user interface",
+              "Tailwind CSS for clean and maintainable styling",
+              "NestJS for scalable and modular backend API",
+              "MongoDB for handling simulation data and player progress",
+              "Cloudinary for managing and optimizing visual assets",
+            ],
+          },
+          {
+            title: "🎮 Gamification & Experience",
+            items: [
+              "Role-based simulation with player, broker, and admin access",
+              "Live stock trading game with dynamic pricing logic",
+              "Reward mechanics to keep users engaged and learning",
+              "Visually engaging UI tailored for a younger audience",
+            ],
+          },
+          {
+            title: "📐 Architecture",
+            items: [
+              "Decoupled frontend and backend with RESTful APIs",
+              "State management for simulating dynamic market behavior",
+              "Modular component design for reusable game interfaces",
+              "Admin dashboard for simulation configuration and monitoring",
+            ],
+          },
+          {
+            title: "🔒 Security",
+            items: [
+              "Role-based access control for children and supervisors",
+              "Secure REST API endpoints with full validation layers",
+              "Hosted over HTTPS to ensure secure in-venue connectivity",
+            ],
+          },
+          {
+            title: "📦 Deployment",
+            items: [
+              "Cloud deployment using AWS for scalability and reliability",
+              "Environment-specific configurations for local venue access",
+              "Continuous integration setup for smooth development updates",
+            ],
+          },
+          {
+            title: "🚀 Results",
+            items: [
+              "Delivered a one-of-a-kind educational experience used daily in KidZania Cairo",
+              "Supported high-concurrency usage during peak school visit hours",
+              "Helped EFG Hermes extend their financial literacy mission to a new generation",
+            ],
+          },
+        ],
+      },
+      {
         images: ["/images/projects/efg-stock/efg_banner.png"],
+      },
+      {
+        images: ["/images/projects/efg-stock/efg_banner-admin.png"],
       },
     ],
   },
   {
-    id: 2,
+    id: "lifecare-egypt",
+    name: "LifeCare Egypt",
+    services: ["Web Development", "Maintenance & Support", "UI/UX Design"],
+    description:
+      "LifeCare Egypt is a leading B2B distributor in the cosmetics and personal care industry. We developed a robust, modern, and responsive business website to support their operations, improve digital presence, and streamline B2B communication. The project included custom domain setup, professional email infrastructure, SEO-optimized pages, and performance-tested responsive layouts, all built to elevate the brand’s credibility and usability for both partners and potential customers.",
+    date: "March 2025",
+    thumbnail: "/images/projects/lifecare-egypt/lifecare-egypt_thumbnail.png",
+    // download: "/images/projects/lifecare-egypt/lifecare_case-study.pdf",
+    site: "https://lifecaregypt.link",
+    audience: "Beauty Cosmetics Distributors",
+    sections: [
+      {
+        highlights: [
+          {
+            title: "🛠️ Tech Stack",
+            items: [
+              "React.js",
+              "AWS Amplify, Route 53, WorkMail & SES",
+              "Vite · Tailwind CSS",
+            ],
+          },
+          {
+            title: "📐 Architecture",
+            items: [
+              "Responsive business website using React & Tailwind",
+              "SEO-optimized structure with semantic markup",
+              "Integrated contact form with direct-to-email delivery",
+            ],
+          },
+          {
+            title: "🚀 Results",
+            items: [
+              "Established a strong digital identity and brand presence",
+              "Enabled professional email communication with partners",
+              "Enhanced trust and credibility in B2B engagements",
+            ],
+          },
+          {
+            title: "🔒 Security",
+            items: [
+              "Spam-protected form submissions",
+              "Secure HTTPS hosting via AWS",
+              "Branded email with DKIM, SPF & domain verification",
+            ],
+          },
+          {
+            title: "📦 Deployment",
+            items: [
+              "AWS Amplify static hosting with Route 53 custom domain",
+              "Email infrastructure via AWS WorkMail & SES",
+              "Cross-device tested and optimized for performance",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "mirage-perfumes",
     name: "Mirage Perfumes",
     services: [
       "Logo/Brand Identity",
@@ -88,7 +211,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 3,
+    id: "kairos",
     name: "Kairos Software Solutions",
     services: ["Logo/Brand Identity", "UI/UX Design"],
     description:
@@ -130,7 +253,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 4,
+    id: "dyar-hajer",
     name: "Dyar Hajer",
     services: ["Web Development", "API Development", "Maintenance & Support"],
     description:
@@ -147,7 +270,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 5,
+    id: "collin-candy",
     name: "Collin Candy",
     services: ["Logo/Brand Identity", "UI/UX Design"],
     description:
@@ -185,7 +308,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 6,
+    id: "trip-global",
     name: "Trip Global",
     services: ["Logo/Brand Identity", "UI/UX Design"],
     description:

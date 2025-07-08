@@ -3,34 +3,36 @@ import Section from "../shared/Section";
 import Image from "next/image";
 import ServiceCard from "../cards/ServiceCard";
 import { AppWindow, Sparkles, SwatchBook } from "lucide-react";
+import { ServicesSection } from "../ui/services-section";
 
 const ServicesPage = () => {
   return (
     <Section>
-      <div className="text-center flex flex-col gap-8 mb-16 xl:mb-32">
+      <div className="text-center flex flex-col gap-4">
         <h1 className="text-primary font-semibold text-xs xl:text-[16px]">
           Services
         </h1>
-        <h2 className="text-2xl md:text-4xl xl:text-5xl">
+        <h2 className="text-xl md:text-3xl xl:text-4xl pb-12">
           From Vision to Reality Our Expertise at Your Service
         </h2>
-        <div className="relative w-full aspect-32/10 rounded-xl">
+        <ServicesSection />
+        {/* <div className="relative w-full aspect-32/10 rounded-xl">
           <Image
             src={"/images/services-banner.png"}
             alt="Evander Services"
             fill
           />
-        </div>
-        <p className="text-sm md:text-[16px] xl:text-[20px] md:text-start">
+        </div> */}
+        {/* <p className="text-sm md:text-[16px] xl:text-[20px] md:text-start">
           At Evander Creative Studio, we specialize in crafting cutting-edge
           digital solutions and compelling brand experiences that help
           businesses thrive. Whether you need software development, graphic
           design, or a comprehensive digital transformation, we have the
           expertise to bring your vision to life.
-        </p>
+        </p> */}
       </div>
 
-      <div className="flex flex-col gap-16 md:gap-32">
+      {/* <div className="flex flex-col gap-16 md:gap-32">
         <div className="flex flex-col md:flex-row justify-center items-center gap-5">
           <div className="flex flex-row md:flex-col gap-7 md:w-[25%] order-2 md:order-1">
             <ServiceCard title={"Logo/Brand Identity"} position="ml-auto" />
@@ -103,7 +105,7 @@ const ServicesPage = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </Section>
   );
 };

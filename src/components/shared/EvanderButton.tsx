@@ -17,6 +17,7 @@ const EvanderButton = ({
   size = "custom",
   type = "button",
   target = "_self",
+  download,
 }: ButtonProps) => {
   const sizeStyles = {
     sm: "py-2 px-3 md:py-3 md:px-4",
@@ -27,7 +28,7 @@ const EvanderButton = ({
 
   const sharedProps = {
     className: clsx(
-      "flex gap-2 hover:bg-primary-hover hover:text-primary-foreground transition-all duration-700 linear h-fit w-fit",
+      "flex gap-2 hover:bg-purple-700 hover:text-primary-foreground transition-all duration-300 linear h-fit w-fit",
       sizeStyles[size],
       className
     ),
@@ -41,7 +42,7 @@ const EvanderButton = ({
   };
 
   return link ? (
-    <Link href={link} {...sharedProps} target={target} />
+    <Link href={link} {...sharedProps} target={target} download={download} />
   ) : (
     <Button
       type={type}

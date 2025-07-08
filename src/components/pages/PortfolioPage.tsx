@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import categories from "@/data/categories";
 import projects from "@/data/projects";
 import ProjectCard from "../cards/ProjectCard";
-import services from "@/data/services";
+import { services } from "@/data/services";
 
 const PortfolioPage = () => {
   const [selectedTab, setSelectedTab] = useState("All Projects");

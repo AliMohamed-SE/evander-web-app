@@ -20,6 +20,7 @@ export interface ButtonProps {
   size?: "sm" | "md" | "lg" | "custom";
   type?: "button" | "submit" | "reset";
   target?: string;
+  download?: boolean;
 }
 
 export interface NavLinkProps {

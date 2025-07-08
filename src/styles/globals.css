@@ -154,10 +154,10 @@
     @apply border-border outline-ring/50 font-dm-sans;
   }
   body {
-    @apply bg-background text-foreground min-h-[100vh] pb-4 pt-12;
+    @apply bg-background text-foreground min-h-[100vh] pb-4 pt-20;
   }
   section.global-section {
-    @apply my-4 py-4 md:my-8 md:py-8 xl:my-[60px] xl:py-[60px];
+    @apply py-4 md:py-8 xl:py-[60px];
   }
   h1,
   h2,
