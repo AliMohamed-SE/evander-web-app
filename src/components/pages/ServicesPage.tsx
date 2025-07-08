@@ -1,8 +1,5 @@
 import React from "react";
 import Section from "../shared/Section";
-import Image from "next/image";
-import ServiceCard from "../cards/ServiceCard";
-import { AppWindow, Sparkles, SwatchBook } from "lucide-react";
 import { ServicesSection } from "../ui/services-section";
 
 const ServicesPage = () => {

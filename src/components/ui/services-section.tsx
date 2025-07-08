@@ -35,11 +35,6 @@ export function ServicesSection() {
     setOpen(true);
   };
 
-  const handleClose = () => {
-    setOpen(false);
-    setSelected(null);
-  };
-
   return (
     <div className="px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 rounded-2xl shadow-xl overflow-hidden">
