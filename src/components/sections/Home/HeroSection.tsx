@@ -1,15 +1,22 @@
 import { HoverBorderGradient } from "@/components/buttons/HoverBorderGradient";
 import Section from "@/components/shared/Section";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 const HeroSection = () => {
   return (
     <div
-      className="relative bg-[url('/images/bg-hero.png')] bg-cover bg-center bg-no-repeat pt-[76px] md:pt-[104px] xl:pt-[120px] pb-[60px] md:pb-[104px] xl:pb-[120px] 
+      className="relative pt-[76px] md:pt-[104px] xl:pt-[120px] pb-[60px] md:pb-[104px] xl:pb-[120px] 
   after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full 
-  after:bg-gradient-to-b after:from-background after:via-transparent after:to-background after:-z-1 z-0"
+  after:bg-gradient-to-b after:from-background after:via-transparent after:to-background after:-z-1"
     >
+      <Image
+        src="/images/bg-hero.png"
+        alt="Hero Background Image"
+        fill
+        className="absolute top-0 object-center object-cover -z-1"
+      />
       <Section className="py-0">
         <div className="flex flex-col items-center justify-center gap-4 xl:gap-8">
           <h1 className="text-3xl md:text-5xl xl:text-6xl font-semibold text-center leading-snug">
